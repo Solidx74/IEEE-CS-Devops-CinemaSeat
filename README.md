@@ -5,7 +5,7 @@
 **A movie-ticket booking system built around one non-negotiable invariant: a seat is never sold twice.**
 
 [![AWS](https://img.shields.io/badge/AWS-EC2-232F3E?logo=amazonwebservices&logoColor=white)](#production-deployment)
-[![CI](https://github.com/sakawatkabir13/cinemaseat/actions/workflows/ci.yml/badge.svg)](https://github.com/sakawatkabir13/cinemaseat/actions/workflows/ci.yml)
+[![CI](https://github.com/Solidx74/IEEE-CS-Devops-CinemaSeat/actions/workflows/ci.yml/badge.svg)](https://github.com/Solidx74/IEEE-CS-Devops-CinemaSeat/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](api/pyproject.toml)
 [![FastAPI](https://img.shields.io/badge/FastAPI-async-009688?logo=fastapi&logoColor=white)](api/app/main.py)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](web/package.json)
@@ -65,8 +65,8 @@ These guarantees deliberately favor correctness over maximum availability. A par
 ### Run the complete stack
 
 ```bash
-git clone https://github.com/sakawatkabir13/cinemaseat.git
-cd cinemaseat
+git clone https://github.com/Solidx74/IEEE-CS-Devops-CinemaSeat.git
+cd IEEE-CS-Devops-CinemaSeat
 docker compose up --build
 ```
 
@@ -77,7 +77,7 @@ Once the containers are healthy:
 | Service | URL |
 |---|---|
 | Customer web app | [https://cinemaseat.cuetinsights.dev/](https://cinemaseat.cuetinsights.dev/) |
-| GitHub repository | [https://github.com/sakawatkabir13/cinemaseat](https://github.com/sakawatkabir13/cinemaseat) |
+| GitHub repository | [https://github.com/Solidx74/IEEE-CS-Devops-CinemaSeat](https://github.com/Solidx74/IEEE-CS-Devops-CinemaSeat) |
 | Drive link | [https://drive.google.com/file/d/1TBJ423DjF6Lj9HJuRYmkfU65WI1d7mO7/view](https://drive.google.com/file/d/1TBJ423DjF6Lj9HJuRYmkfU65WI1d7mO7/view) |
 
 The seeded catalog contains three movies, two theatres, four showtimes, and 80 seats. Showtime dates are generated relative to the day the seed first runs.
@@ -371,6 +371,6 @@ The target host needs Docker Compose, this repository's `docker-compose.yml`, pr
 
 <div align="center">
 
-Built as a concurrency-focused systems demonstration · [Report an issue](https://github.com/sakawatkabir13/cinemaseat/issues)
+Built as a concurrency-focused systems demonstration · [Report an issue](https://github.com/Solidx74/IEEE-CS-Devops-CinemaSeat/issues)
 
 </div>
