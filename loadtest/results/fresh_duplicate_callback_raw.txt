@@ -1,0 +1,6 @@
+CinemaSeat concurrent fresh duplicate callback run
+booking_ref=CS-7748ADAA707347C5
+event_id=evt_fresh_1786172528193868796
+request_1_http=200 result=duplicate
+request_2_http=200 result=confirmed
+db_payment_status|revenue_counted|event_count|booking_count=SUCCEEDED|t|1|1

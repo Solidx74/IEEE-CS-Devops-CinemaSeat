@@ -1,0 +1,15 @@
+CinemaSeat Scenario B raw run
+generator=host bash/curl
+target=showtime:1 seat:8
+timeline_initial_at=2026-08-08T07:11:53.320673386Z status=AVAILABLE
+timeline_first_hold_at=2026-08-08T07:11:53.409818184Z http_status=201 hold_id=0bf65f06-17c1-4511-b8c9-c88f2a32cf37 ttl_seconds=5 body={"hold_id":"0bf65f06-17c1-4511-b8c9-c88f2a32cf37","showtime_id":1,"seat_id":8,"status":"HELD","expires_at":"2026-08-08T07:11:58.370441Z","ttl_seconds":5}
+timeline_held_at=2026-08-08T07:11:53.418999594Z status=HELD
+timeline_after_expiry_at=2026-08-08T07:11:59.508738909Z waited_seconds=6 status=AVAILABLE
+timeline_second_hold_at=2026-08-08T07:11:59.579353570Z http_status=201 hold_id=79d97d54-8158-4665-b934-e8a32275982c body={"hold_id":"79d97d54-8158-4665-b934-e8a32275982c","showtime_id":1,"seat_id":8,"status":"HELD","expires_at":"2026-08-08T07:12:04.549776Z","ttl_seconds":5}
+timeline_pay_accepted_at=2026-08-08T07:11:59.668910402Z http_status=202 payment_id=699057d7-e74c-491d-b0f6-c642d0234dc7 booking_ref=CS-73890D89C6174041 body={"payment_id":"699057d7-e74c-491d-b0f6-c642d0234dc7","booking_ref":"CS-73890D89C6174041","status":"ACCEPTED","poll_url":"/api/v1/payments/699057d7-e74c-491d-b0f6-c642d0234dc7"}
+timeline_terminal_at=2026-08-08T07:12:02.812451057Z payment_status=SUCCEEDED seat_status=BOOKED payment_body={"payment_id":"699057d7-e74c-491d-b0f6-c642d0234dc7","booking_ref":"CS-73890D89C6174041","gateway_payment_id":"pay_af6c5e16e3d0de7f","status":"SUCCEEDED","amount":"450.00","currency":"BDT","booking_confirmed":true,"created_at":"2026-08-08T07:11:59.615354Z"}
+summary_first_user_abandoned=true
+summary_expired_seat_became_available=true
+summary_second_user_hold_http_status=201
+summary_second_user_booking_confirmed=true
+summary_final_seat_status=BOOKED

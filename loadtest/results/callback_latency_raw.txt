@@ -1,0 +1,116 @@
+CinemaSeat callback row-lock latency run
+started_at=2026-08-08T07:12:27.782163444Z
+finished_at=2026-08-08T07:12:28.520846105Z
+generator=host xargs/curl parallelism=100
+booking_ref=CS-73890D89C6174041
+event_id=evt_fb9572eee4dc40b8
+burst_duration_ms=730
+
+request_id	http_status	total_seconds	response_body
+001	200	0.258791	{"received":true,"result":"duplicate"}
+002	200	0.128610	{"received":true,"result":"duplicate"}
+003	200	0.370772	{"received":true,"result":"duplicate"}
+004	200	0.379006	{"received":true,"result":"duplicate"}
+005	200	0.370858	{"received":true,"result":"duplicate"}
+006	200	0.384117	{"received":true,"result":"duplicate"}
+007	200	0.329967	{"received":true,"result":"duplicate"}
+008	200	0.429780	{"received":true,"result":"duplicate"}
+009	200	0.421962	{"received":true,"result":"duplicate"}
+010	200	0.379582	{"received":true,"result":"duplicate"}
+011	200	0.436013	{"received":true,"result":"duplicate"}
+012	200	0.432406	{"received":true,"result":"duplicate"}
+013	200	0.435928	{"received":true,"result":"duplicate"}
+014	200	0.429274	{"received":true,"result":"duplicate"}
+015	200	0.329888	{"received":true,"result":"duplicate"}
+016	200	0.435627	{"received":true,"result":"duplicate"}
+017	200	0.426625	{"received":true,"result":"duplicate"}
+018	200	0.550035	{"received":true,"result":"duplicate"}
+019	200	0.486991	{"received":true,"result":"duplicate"}
+020	200	0.459584	{"received":true,"result":"duplicate"}
+021	200	0.517270	{"received":true,"result":"duplicate"}
+022	200	0.472119	{"received":true,"result":"duplicate"}
+023	200	0.500991	{"received":true,"result":"duplicate"}
+024	200	0.479901	{"received":true,"result":"duplicate"}
+025	200	0.329642	{"received":true,"result":"duplicate"}
+026	200	0.592364	{"received":true,"result":"duplicate"}
+027	200	0.560581	{"received":true,"result":"duplicate"}
+028	200	0.402023	{"received":true,"result":"duplicate"}
+029	200	0.525872	{"received":true,"result":"duplicate"}
+030	200	0.603732	{"received":true,"result":"duplicate"}
+031	200	0.622386	{"received":true,"result":"duplicate"}
+032	200	0.399757	{"received":true,"result":"duplicate"}
+033	200	0.441007	{"received":true,"result":"duplicate"}
+034	200	0.635870	{"received":true,"result":"duplicate"}
+035	200	0.440897	{"received":true,"result":"duplicate"}
+036	200	0.445694	{"received":true,"result":"duplicate"}
+037	200	0.445054	{"received":true,"result":"duplicate"}
+038	200	0.443516	{"received":true,"result":"duplicate"}
+039	200	0.445434	{"received":true,"result":"duplicate"}
+040	200	0.446823	{"received":true,"result":"duplicate"}
+041	200	0.445314	{"received":true,"result":"duplicate"}
+042	200	0.446835	{"received":true,"result":"duplicate"}
+043	200	0.444110	{"received":true,"result":"duplicate"}
+044	200	0.453096	{"received":true,"result":"duplicate"}
+045	200	0.398179	{"received":true,"result":"duplicate"}
+046	200	0.449657	{"received":true,"result":"duplicate"}
+047	200	0.395119	{"received":true,"result":"duplicate"}
+048	200	0.452931	{"received":true,"result":"duplicate"}
+049	200	0.449917	{"received":true,"result":"duplicate"}
+050	200	0.454520	{"received":true,"result":"duplicate"}
+051	200	0.455958	{"received":true,"result":"duplicate"}
+052	200	0.452144	{"received":true,"result":"duplicate"}
+053	200	0.390834	{"received":true,"result":"duplicate"}
+054	200	0.458057	{"received":true,"result":"duplicate"}
+055	200	0.457980	{"received":true,"result":"duplicate"}
+056	200	0.469490	{"received":true,"result":"duplicate"}
+057	200	0.465331	{"received":true,"result":"duplicate"}
+058	200	0.463343	{"received":true,"result":"duplicate"}
+059	200	0.468220	{"received":true,"result":"duplicate"}
+060	200	0.461038	{"received":true,"result":"duplicate"}
+061	200	0.389847	{"received":true,"result":"duplicate"}
+062	200	0.476903	{"received":true,"result":"duplicate"}
+063	200	0.470743	{"received":true,"result":"duplicate"}
+064	200	0.479159	{"received":true,"result":"duplicate"}
+065	200	0.473858	{"received":true,"result":"duplicate"}
+066	200	0.386372	{"received":true,"result":"duplicate"}
+067	200	0.510615	{"received":true,"result":"duplicate"}
+068	200	0.494476	{"received":true,"result":"duplicate"}
+069	200	0.501731	{"received":true,"result":"duplicate"}
+070	200	0.504858	{"received":true,"result":"duplicate"}
+071	200	0.507448	{"received":true,"result":"duplicate"}
+072	200	0.385122	{"received":true,"result":"duplicate"}
+073	200	0.519882	{"received":true,"result":"duplicate"}
+074	200	0.515736	{"received":true,"result":"duplicate"}
+075	200	0.522448	{"received":true,"result":"duplicate"}
+076	200	0.519262	{"received":true,"result":"duplicate"}
+077	200	0.525161	{"received":true,"result":"duplicate"}
+078	200	0.524169	{"received":true,"result":"duplicate"}
+079	200	0.522377	{"received":true,"result":"duplicate"}
+080	200	0.526766	{"received":true,"result":"duplicate"}
+081	200	0.379335	{"received":true,"result":"duplicate"}
+082	200	0.536967	{"received":true,"result":"duplicate"}
+083	200	0.531333	{"received":true,"result":"duplicate"}
+084	200	0.533985	{"received":true,"result":"duplicate"}
+085	200	0.378009	{"received":true,"result":"duplicate"}
+086	200	0.535159	{"received":true,"result":"duplicate"}
+087	200	0.542907	{"received":true,"result":"duplicate"}
+088	200	0.538673	{"received":true,"result":"duplicate"}
+089	200	0.548117	{"received":true,"result":"duplicate"}
+090	200	0.374534	{"received":true,"result":"duplicate"}
+091	200	0.550725	{"received":true,"result":"duplicate"}
+092	200	0.370519	{"received":true,"result":"duplicate"}
+093	200	0.550992	{"received":true,"result":"duplicate"}
+094	200	0.531967	{"received":true,"result":"duplicate"}
+095	200	0.549734	{"received":true,"result":"duplicate"}
+096	200	0.554357	{"received":true,"result":"duplicate"}
+097	200	0.563449	{"received":true,"result":"duplicate"}
+098	200	0.561748	{"received":true,"result":"duplicate"}
+099	200	0.563001	{"received":true,"result":"duplicate"}
+100	200	0.371326	{"received":true,"result":"duplicate"}
+
+summary_http_200=100
+summary_other=0
+summary_p50_seconds=0.458057
+summary_p95_seconds=0.563001
+summary_max_seconds=0.635870
+gateway_callback_timeout_seconds=5

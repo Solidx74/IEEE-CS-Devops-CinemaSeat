@@ -1,0 +1,2 @@
+"""CinemaSeat modular-monolith API."""
+

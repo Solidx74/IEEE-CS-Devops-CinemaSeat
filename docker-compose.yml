@@ -1,0 +1,91 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-cinemaseat}
+      POSTGRES_USER: ${POSTGRES_USER:-cinemaseat}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cinemaseat}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  gateway:
+    image: asifmahmoud414/mock-gateway:latest
+    ports:
+      - "9000:9000"
+    environment:
+      PORT: 9000
+      GATEWAY_SECRET: ${GATEWAY_SECRET:-z2p-2026-secret}
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://127.0.0.1:9000/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+
+  api:
+    image: ${API_IMAGE:-cinemaseat-api:local}
+    build:
+      context: ./api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgresql+asyncpg://cinemaseat:cinemaseat@db:5432/cinemaseat}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      HOLD_TTL_SECONDS: ${HOLD_TTL_SECONDS:-30}
+      GATEWAY_URL: ${GATEWAY_URL:-http://gateway:9000}
+      GATEWAY_CALLBACK_URL: ${GATEWAY_CALLBACK_URL:-http://api:8000/api/v1/payments/callback}
+      GATEWAY_OTP_CALLBACK_URL: ${GATEWAY_OTP_CALLBACK_URL:-http://api:8000/api/v1/otp/callback}
+      GATEWAY_SECRET: ${GATEWAY_SECRET:-z2p-2026-secret}
+      GATEWAY_REQUEST_TIMEOUT_SECONDS: ${GATEWAY_REQUEST_TIMEOUT_SECONDS:-3}
+      GATEWAY_MAX_ATTEMPTS: ${GATEWAY_MAX_ATTEMPTS:-3}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=.8)"]
+      interval: 5s
+      timeout: 1s
+      retries: 20
+    restart: unless-stopped
+
+  web:
+    image: ${WEB_IMAGE:-cinemaseat-web:local}
+    build:
+      context: ./web
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/api/v1}
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--output-document=/dev/null", "http://127.0.0.1:3000/"]
+      interval: 5s
+      timeout: 2s
+      retries: 20
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

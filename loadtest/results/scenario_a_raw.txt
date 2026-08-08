@@ -1,0 +1,117 @@
+CinemaSeat Scenario A raw run
+started_at=2026-08-08T07:11:12.17364936Z
+finished_at=2026-08-08T07:11:12.718944752Z
+generator=host xargs/curl parallelism=100
+target=showtime:1 seat:7
+requests_sent=100
+burst_duration_ms=688
+
+request_id	http_status	total_seconds	response_body
+001	201	0.396705	{"hold_id":"9dcef4b2-1eb1-4687-86e8-f18aa2365273","showtime_id":1,"seat_id":7,"status":"HELD","expires_at":"2026-08-08T07:11:42.407829Z","ttl_seconds":30}
+002	409	0.389153	{"detail":"Seat is already held or booked"}
+003	409	0.393663	{"detail":"Seat is already held or booked"}
+004	409	0.382673	{"detail":"Seat is already held or booked"}
+005	409	0.403615	{"detail":"Seat is already held or booked"}
+006	409	0.392540	{"detail":"Seat is already held or booked"}
+007	409	0.396087	{"detail":"Seat is already held or booked"}
+008	409	0.398009	{"detail":"Seat is already held or booked"}
+009	409	0.384351	{"detail":"Seat is already held or booked"}
+010	409	0.379467	{"detail":"Seat is already held or booked"}
+011	409	0.395807	{"detail":"Seat is already held or booked"}
+012	409	0.384061	{"detail":"Seat is already held or booked"}
+013	409	0.383500	{"detail":"Seat is already held or booked"}
+014	409	0.470566	{"detail":"Seat is already held or booked"}
+015	409	0.388851	{"detail":"Seat is already held or booked"}
+016	409	0.380304	{"detail":"Seat is already held or booked"}
+017	409	0.531176	{"detail":"Seat is already held or booked"}
+018	409	0.512388	{"detail":"Seat is already held or booked"}
+019	409	0.456209	{"detail":"Seat is already held or booked"}
+020	409	0.533070	{"detail":"Seat is already held or booked"}
+021	409	0.468337	{"detail":"Seat is already held or booked"}
+022	409	0.417882	{"detail":"Seat is already held or booked"}
+023	409	0.399008	{"detail":"Seat is already held or booked"}
+024	409	0.526264	{"detail":"Seat is already held or booked"}
+025	409	0.394200	{"detail":"Seat is already held or booked"}
+026	409	0.392927	{"detail":"Seat is already held or booked"}
+027	409	0.392595	{"detail":"Seat is already held or booked"}
+028	409	0.485303	{"detail":"Seat is already held or booked"}
+029	409	0.397178	{"detail":"Seat is already held or booked"}
+030	409	0.525467	{"detail":"Seat is already held or booked"}
+031	409	0.514735	{"detail":"Seat is already held or booked"}
+032	409	0.336929	{"detail":"Seat is already held or booked"}
+033	409	0.471276	{"detail":"Seat is already held or booked"}
+034	409	0.425684	{"detail":"Seat is already held or booked"}
+035	409	0.423005	{"detail":"Seat is already held or booked"}
+036	409	0.434223	{"detail":"Seat is already held or booked"}
+037	409	0.529636	{"detail":"Seat is already held or booked"}
+038	409	0.484151	{"detail":"Seat is already held or booked"}
+039	409	0.425432	{"detail":"Seat is already held or booked"}
+040	409	0.432617	{"detail":"Seat is already held or booked"}
+041	409	0.545346	{"detail":"Seat is already held or booked"}
+042	409	0.344932	{"detail":"Seat is already held or booked"}
+043	409	0.539067	{"detail":"Seat is already held or booked"}
+044	409	0.368117	{"detail":"Seat is already held or booked"}
+045	409	0.342897	{"detail":"Seat is already held or booked"}
+046	409	0.345784	{"detail":"Seat is already held or booked"}
+047	409	0.353958	{"detail":"Seat is already held or booked"}
+048	409	0.366947	{"detail":"Seat is already held or booked"}
+049	409	0.551184	{"detail":"Seat is already held or booked"}
+050	409	0.444437	{"detail":"Seat is already held or booked"}
+051	409	0.333816	{"detail":"Seat is already held or booked"}
+052	409	0.345266	{"detail":"Seat is already held or booked"}
+053	409	0.447563	{"detail":"Seat is already held or booked"}
+054	409	0.387150	{"detail":"Seat is already held or booked"}
+055	409	0.444535	{"detail":"Seat is already held or booked"}
+056	409	0.498885	{"detail":"Seat is already held or booked"}
+057	409	0.381278	{"detail":"Seat is already held or booked"}
+058	409	0.502821	{"detail":"Seat is already held or booked"}
+059	409	0.451857	{"detail":"Seat is already held or booked"}
+060	409	0.393942	{"detail":"Seat is already held or booked"}
+061	409	0.500669	{"detail":"Seat is already held or booked"}
+062	409	0.495774	{"detail":"Seat is already held or booked"}
+063	409	0.389074	{"detail":"Seat is already held or booked"}
+064	409	0.389895	{"detail":"Seat is already held or booked"}
+065	409	0.454023	{"detail":"Seat is already held or booked"}
+066	409	0.409407	{"detail":"Seat is already held or booked"}
+067	409	0.387031	{"detail":"Seat is already held or booked"}
+068	409	0.524584	{"detail":"Seat is already held or booked"}
+069	409	0.518411	{"detail":"Seat is already held or booked"}
+070	409	0.408516	{"detail":"Seat is already held or booked"}
+071	409	0.404475	{"detail":"Seat is already held or booked"}
+072	409	0.462876	{"detail":"Seat is already held or booked"}
+073	409	0.523974	{"detail":"Seat is already held or booked"}
+074	409	0.464339	{"detail":"Seat is already held or booked"}
+075	409	0.466007	{"detail":"Seat is already held or booked"}
+076	409	0.463084	{"detail":"Seat is already held or booked"}
+077	409	0.413642	{"detail":"Seat is already held or booked"}
+078	409	0.413866	{"detail":"Seat is already held or booked"}
+079	409	0.517572	{"detail":"Seat is already held or booked"}
+080	409	0.426602	{"detail":"Seat is already held or booked"}
+081	409	0.426855	{"detail":"Seat is already held or booked"}
+082	409	0.418086	{"detail":"Seat is already held or booked"}
+083	409	0.421879	{"detail":"Seat is already held or booked"}
+084	409	0.428873	{"detail":"Seat is already held or booked"}
+085	409	0.472607	{"detail":"Seat is already held or booked"}
+086	409	0.440936	{"detail":"Seat is already held or booked"}
+087	409	0.480290	{"detail":"Seat is already held or booked"}
+088	409	0.494508	{"detail":"Seat is already held or booked"}
+089	409	0.480418	{"detail":"Seat is already held or booked"}
+090	409	0.474801	{"detail":"Seat is already held or booked"}
+091	409	0.419099	{"detail":"Seat is already held or booked"}
+092	409	0.494084	{"detail":"Seat is already held or booked"}
+093	409	0.433196	{"detail":"Seat is already held or booked"}
+094	409	0.477927	{"detail":"Seat is already held or booked"}
+095	409	0.496423	{"detail":"Seat is already held or booked"}
+096	409	0.435437	{"detail":"Seat is already held or booked"}
+097	409	0.434786	{"detail":"Seat is already held or booked"}
+098	409	0.443106	{"detail":"Seat is already held or booked"}
+099	409	0.432675	{"detail":"Seat is already held or booked"}
+100	409	0.442543	{"detail":"Seat is already held or booked"}
+
+summary_success_201=1
+summary_conflict_409=99
+summary_other=0
+summary_oversell_count=0
+seat_map_status_after_burst=HELD
+seat_map_held_entries_for_target=1
+seat_map_raw={"showtime_id":1,"movie_title":"The Last Orbit","theatre_name":"CinemaSeat Bashundhara","starts_at":"2026-08-09T19:00:00Z","price":"450.00","seats":[{"id":1,"row_label":"A","seat_number":1,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":2,"row_label":"A","seat_number":2,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":3,"row_label":"A","seat_number":3,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":4,"row_label":"A","seat_number":4,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":5,"row_label":"A","seat_number":5,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":6,"row_label":"A","seat_number":6,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":7,"row_label":"A","seat_number":7,"seat_type":"STANDARD","status":"HELD"},{"id":8,"row_label":"A","seat_number":8,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":9,"row_label":"A","seat_number":9,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":10,"row_label":"A","seat_number":10,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":11,"row_label":"B","seat_number":1,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":12,"row_label":"B","seat_number":2,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":13,"row_label":"B","seat_number":3,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":14,"row_label":"B","seat_number":4,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":15,"row_label":"B","seat_number":5,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":16,"row_label":"B","seat_number":6,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":17,"row_label":"B","seat_number":7,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":18,"row_label":"B","seat_number":8,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":19,"row_label":"B","seat_number":9,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":20,"row_label":"B","seat_number":10,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":21,"row_label":"C","seat_number":1,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":22,"row_label":"C","seat_number":2,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":23,"row_label":"C","seat_number":3,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":24,"row_label":"C","seat_number":4,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":25,"row_label":"C","seat_number":5,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":26,"row_label":"C","seat_number":6,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":27,"row_label":"C","seat_number":7,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":28,"row_label":"C","seat_number":8,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":29,"row_label":"C","seat_number":9,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":30,"row_label":"C","seat_number":10,"seat_type":"STANDARD","status":"AVAILABLE"},{"id":31,"row_label":"D","seat_number":1,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":32,"row_label":"D","seat_number":2,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":33,"row_label":"D","seat_number":3,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":34,"row_label":"D","seat_number":4,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":35,"row_label":"D","seat_number":5,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":36,"row_label":"D","seat_number":6,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":37,"row_label":"D","seat_number":7,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":38,"row_label":"D","seat_number":8,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":39,"row_label":"D","seat_number":9,"seat_type":"PREMIUM","status":"AVAILABLE"},{"id":40,"row_label":"D","seat_number":10,"seat_type":"PREMIUM","status":"AVAILABLE"}]}
